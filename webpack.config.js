@@ -11,5 +11,11 @@ module.exports = {
 		contentBase: __dirname,
 		compress: true,
 		port: 9000
-	}
+	},
+	module: {
+		rules: [{
+			test: /\.js$/,
+			loader: ["babel-loader"]
+		}]
+	}		
 };
