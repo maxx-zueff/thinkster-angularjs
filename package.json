@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "server": "http-server ./dist -a localhost -p 8000 -c-1",
+    "server": "http-server ./ -a localhost -p 8000 -c-1",
 
     "start": "concurrently \"npm run dev\" \"npm run server\""
   },
